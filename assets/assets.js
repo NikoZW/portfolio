@@ -15,6 +15,10 @@ import hand_icon from './hand-icon.png';
 import menu_black from './menu-black.png';
 import close_black from './close-black.png';
 import send_icon from './send-icon.png';
+import vercel from './vercel.png';
+import supabase from './supabase.png';
+import claude from './claude.png';
+import notion from './notion.png';
 
 export const assets = {
     user_image,
@@ -34,6 +38,11 @@ export const assets = {
     menu_black,
     close_black,
     send_icon,
+    vercel,
+    supabase,
+    claude,
+    notion
+
 };
 
 export const workData = [
@@ -60,11 +69,11 @@ export const workData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, title: 'Education', description: 'BCIT' },
-    { icon: assets.project_icon, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, title: 'Skills', description: 'HTML, CSS, JavaScript, TypeScript, Python, Java, React, Node.js, SQL, Next.js, Tailwind CSS, Restful API' },
+    { icon: assets.edu_icon, title: 'Education', description: 'BCIT, Wake Forest University, NC State University' },
+    { icon: assets.project_icon, title: 'Companies', description: 'EY, Willis Towers Watson, Inmar Intelligence' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.vercel, assets.supabase, assets.claude, assets.notion
 ];

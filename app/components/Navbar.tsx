@@ -42,9 +42,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-300 ${
-          isScroll ? 'bg-white/50 backdrop-blur-md shadow-lg' : ''
-        }`}
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-300 
+          ${isScroll ? 'bg-white/50 backdrop-blur-md shadow-lg' : ''}`}
       >
         {/* Left logo */}
         <a href="#top">
@@ -64,10 +63,9 @@ const Navbar = () => {
 
         {/* Right side: mobile menu button / spacer on desktop */}
         <button className="block md:hidden ml-3" onClick={openMenu} aria-label="Open menu">
-          <Image src={assets.menu_black} alt="Menu icon" className="w-6" width={24} height={24} />
+          <Image src={assets.menu_black} alt="Menu icon" className="w-6 cursor-pointer" width={24} height={24} />
         </button>
         <div className="hidden md:block w-28" />
-
         {/* Mobile menu */}
         <ul
           ref={sideMenuRef}

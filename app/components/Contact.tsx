@@ -37,49 +37,44 @@ const Contact = () => {
       setResult(data.message)
     }
   }
-
-
-
-
-
   return (
-    <div 
-      id='contact' 
+    <div
+      id='contact'
       className='w-full px-[12%] py-10 scroll-mt-20 bg-no-repeat bg-center bg-[length:90%_auto]'
-      style={{ backgroundImage: 'url("/footer-bg-color.png")' }}
+      // style={{ backgroundImage: 'url("/footer-bg-color.png")' }}
     >
       <h4 className='text-center mb-2 text-lg font-Ovo text-gray-700'>
-        Connect with me
+        {/* Connect with me */}
       </h4>
       <h2 className='text-center text-5xl font-Ovo'>
-        Get in touch
+        Let’s Connect
       </h2>
 
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-gray-700'>
-        Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
+        Please reach out if you have an opportunity or an idea you’d like to discuss!
       </p>
 
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8'>
-          <input 
-            type='text' 
+          <input
+            type='text'
             name='name'
-            placeholder='Enter your name' 
+            placeholder='Enter your name'
             required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white'
           />
-          <input 
-            type='email' 
+          <input
+            type='email'
             name='email'
-            placeholder='Enter your email' 
+            placeholder='Enter your email'
             required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white'
           />
         </div>
-        <textarea 
+        <textarea
           name='message'
-          rows={6} 
-          placeholder='Enter your message' 
+          rows={6}
+          placeholder='Enter your message'
           required
           className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6'
         ></textarea>
