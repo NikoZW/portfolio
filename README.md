@@ -1,7 +1,8 @@
 <div align="center">
   <h3>Niko Wang's Portfolio</h3>
-  <p>Frontend Developer · Vancouver, BC</p>
-  <a href="https://github.com/NikoZW/portfolio">github.com/NikoZW/portfolio</a>
+  <p align="center">
+  <img src="./assets/readme.png" alt="Portfolio Preview" width="500" />
+</p>
 </div>
 
 ### Tech Stack
@@ -37,9 +38,9 @@
 
 ### Learn More
 
-This project is built with **Next.js 16 App Router** and **TypeScript**. You can learn more in the [Next.js Documentation](https://nextjs.org/docs).
+This project is built with **Next.js 16**. You can learn more in the [Next.js Documentation](https://nextjs.org/docs).
 
-Styling is done with **Tailwind CSS v4**, a utility-first CSS framework. You can learn more in the [Tailwind CSS documentation](https://tailwindcss.com/).
+Styling is done with **Tailwind CSS**, a utility-first CSS framework. You can learn more in the [Tailwind CSS documentation](https://tailwindcss.com/).
 
 ### Reference
-[Next.js](https://nextjs.org/) | [Tailwind CSS](https://tailwindcss.com/) | [Vercel](https://vercel.com/)
+[Next.js](https://nextjs.org/) | [Tailwind CSS](https://tailwindcss.com/) | [Vercel](https://vercel.com/) 
