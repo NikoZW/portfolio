@@ -12,29 +12,30 @@ const About = () => {
       <h2 className="text-center text-5xl">About Me</h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         {/* Profile Image */}
-        <div className="w-56 sm:w-72 md:w-80 lg:w-96 flex-shrink-0">
-          {" "}
+        <div className="w-56 sm:w-72 md:w-80 lg:w-96 flex-shrink-0 aspect-[3/5] overflow-hidden rounded-3xl">
           <Image
             src={assets.user_image}
             alt="User image"
             width={320}
-            height={320}
-            className="w-full rounded-3xl"
+            height={533}
+            className="w-full h-full object-cover"
             priority
           />
         </div>
 
         {/* Content */}
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl text-gray-700 dark:text-gray-300">
-            I’m a web developer passionate about building clean, thoughtful, and
-            user-friendly web experiences. I love the balance of creativity and
-            problem-solving in development, and I’m currently growing into web
-            development through BCIT and hands-on projects. Outside of coding, I
-            enjoy staying active — from working toward Tennis 3.0 🎾 to HIIT and
-            HYROX training 💪 — and recharging with coffee ☕️, dessert 🍰, and a
-            good hike⛰️.{" "}
-          </p>
+          <div className="mb-10 max-w-2xl text-gray-700 dark:text-gray-300 space-y-4">
+            <p>
+              I&apos;m a Vancouver-based frontend developer with two years of consulting experience at Ernst &amp; Young in Shanghai. 🌍 After completing BCIT&apos;s Computer Systems Technology program 🎓, I now build full-stack web apps with React, Next.js, and TypeScript 💻
+            </p>
+            <p>
+              I&apos;m good at spotting problems and turning them into practical solutions. I have a strong eye for design and user experience 🎨, communicate well in team settings 🤝, and bring a hardworking, detail-oriented mindset to everything I do. 🚀
+            </p>
+            <p>
+              Outside of coding, you&apos;ll usually find me training for HYROX 🏋️, chasing a half-marathon PB 🏃, and working my way toward Tennis 3.0 🎾
+            </p>
+          </div>
 
           {/* Skills Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mb-10">
@@ -51,7 +52,15 @@ const About = () => {
                   className="w-8 h-8 mb-3"
                 />
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">{item.description}</p>
+                {'items' in item && item.items ? (
+                  <ul className="text-gray-600 dark:text-gray-400 text-sm list-disc list-inside space-y-1">
+                    {item.items.map((entry, i) => (
+                      <li key={i}>{entry}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{item.description}</p>
+                )}
               </div>
             ))}
           </div>

@@ -14,25 +14,15 @@ const Header = () => {
       />
 
       <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl">
-        Hi! I'm Niko Wang{" "}
-        <Image
-          src={assets.hand_icon}
-          alt="Hand wave icon"
-          width={24}
-          height={24}
-          className="w-6"
-        />
+        Hi! I&apos;m Niko Wang 👋
       </h3>
 
       <h1 className="text-3xl sm:text-5xl lg:text-5xl ">
-        Web Developer, Vancouver, BC
+        Vancouver-based Web Developer
       </h1>
 
       <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
-        I'm a web developer who loves crafting clean, interactive, and
-        user-friendly experiences. Currently expanding into web development in
-        Canada, while enjoying the journey of learning, building, and solving
-        real-world problems ✨
+        I build modern web applications with React, Next.js, and TypeScript 💻, with a focus on clean UI, thoughtful UX, and practical problem-solving ✨. With a background in consulting and development 🤝, I enjoy turning ideas into products that are both useful and well-designed 🎨.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 flex-wrap">

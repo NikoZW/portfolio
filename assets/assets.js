@@ -56,41 +56,51 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Niko Tick',
+        description: 'Full-Stack Todo App',
+        tech: 'React, Vite, Supabase',
         bgImage: '/work-1.png',
+        link: 'https://niko-tick.vercel.app',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Niko Budget',
+        description: 'AI-Powered Expense Tracker',
+        tech: 'React Native, Expo, Express.js, DeepSeek AI, Supabase',
         bgImage: '/work-2.png',
+        link: 'https://github.com/NikoZW/niko-budget',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Niko Daily Briefs',
+        description: 'Automated AI Newsletter',
+        tech: 'React, Next.js, Inngest, Resend, RSS',
         bgImage: '/work-3.png',
+        link: 'https://niko-brief.vercel.app',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'E. & J. Gallo Winery',
+        description: 'Market Entry Analysis',
+        tech: 'Python, R, SQL, Tableau',
         bgImage: '/work-4.png',
+        link: 'https://github.com/NikoZW/gallo-market-analysis-portfolio',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
+        tech: '',
         bgImage: '/work-5.png',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
+        tech: '',
         bgImage: '/work-6.png',
     },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, title: 'Skills', description: 'HTML, CSS, JavaScript, TypeScript, Python, Java, React, Node.js, SQL, Next.js, Tailwind CSS, Restful API' },
-    { icon: assets.edu_icon, title: 'Education', description: 'BCIT, Wake Forest University, NC State University' },
-    { icon: assets.project_icon, title: 'Companies', description: 'EY, Willis Towers Watson, Inmar Intelligence' }
+    { icon: assets.code_icon, title: 'Skills', description: 'HTML, CSS, JavaScript, TypeScript, Python, Java, React, Expo, Node.js, Express.js, SQL, Next.js, Vite, Tailwind CSS' },
+    { icon: assets.edu_icon, title: 'Education', items: ['BCIT', 'Wake Forest University', 'NC State University'] },
+    { icon: assets.project_icon, title: 'Companies', items: ['Ernst & Young', 'Willis Towers Watson', 'Inmar Intelligence'] }
 ];
 
 export const toolsData = [

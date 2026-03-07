@@ -16,16 +16,25 @@ const Work = () => {
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
-        {workData?.map((project, index) => (
-          <div
+        {workData?.map((project, index) => {
+          const Wrapper = project.link ? 'a' : 'div';
+          const wrapperProps = project.link
+            ? { href: project.link, target: '_blank', rel: 'noopener noreferrer' }
+            : {};
+          return (
+          <Wrapper
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group block"
             style={{ backgroundImage: `url(${project.bgImage})` }}
+            {...wrapperProps}
           >
             <div className="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold dark:text-gray-100">{project.title}</h2>
                 <p className="text-sm text-gray-700 dark:text-gray-300">{project.description}</p>
+                {project.tech && (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-0.5">{project.tech}</p>
+                )}
               </div>
               <div className="border rounded-full border-black dark:border-gray-300 w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] dark:shadow-[2px_2px_0_#d1d5db] transition">
                 <Image
@@ -44,8 +53,9 @@ const Work = () => {
                 />
               </div>
             </div>
-          </div>
-        ))}
+          </Wrapper>
+          );
+        })}
       </div>
     </div>
   );
