@@ -84,16 +84,18 @@ export const workData = [
         link: 'https://github.com/NikoZW/gallo-market-analysis-portfolio',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        tech: '',
+        title: 'mytechie',
+        description: 'Stripe Payment Integration',
+        tech: 'Node.js, Express, Stripe API, MongoDB',
         bgImage: '/work-5.png',
+        link: 'https://mytechie.pro/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        tech: '',
+        title: 'Kinexus',
+        description: 'Legacy Migration & Laravel Refactoring',
+        tech: 'Laravel, PHP, Vite, Blade, MySQL',
         bgImage: '/work-6.png',
+        link: 'https://www.kinexus.ca/kinexus_2025/',
     },
 ]
 

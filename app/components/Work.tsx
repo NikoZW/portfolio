@@ -24,10 +24,27 @@ const Work = () => {
           return (
           <Wrapper
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group block"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            className="aspect-square rounded-lg relative cursor-pointer group block overflow-hidden"
             {...wrapperProps}
           >
+            {/* Blurred background */}
+            <div
+              className="absolute inset-0 bg-cover bg-center scale-150 blur-2xl"
+              style={{ backgroundImage: `url(${project.bgImage})` }}
+              aria-hidden
+            />
+            {/* Centered image */}
+            <div className="absolute inset-0 flex items-center justify-center p-1">
+              <div className="relative w-full h-full">
+                <Image
+                  src={project.bgImage}
+                  alt=""
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            </div>
             <div className="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold dark:text-gray-100">{project.title}</h2>
