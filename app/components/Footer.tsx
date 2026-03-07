@@ -8,11 +8,11 @@ const Footer = () => {
         <Image src={assets.logo} alt='logo' className='w-36 mx-auto mb-2' width={144} height={48} />
       </div> */}
 
-      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-        <p>© 2025 Niko Wang. All rights reserved.</p>
+      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 dark:border-gray-600 mx-[10%] mt-12 py-6">
+        <p className="dark:text-gray-300">© 2025 Niko Wang. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="https://github.com/NikoZW">
+            <a target="_blank" href="https://github.com/NikoZW" className="dark:text-gray-300 hover:opacity-80">
               GitHub
             </a>
           </li>
@@ -20,6 +20,7 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/zizhuo-wang-niko/"
+              className="dark:text-gray-300 hover:opacity-80"
             >
               LinkedIn
             </a>

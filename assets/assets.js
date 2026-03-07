@@ -8,13 +8,16 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
+import right_arrow_dark from './right-arrow-dark.png';
 import logo from './logo.png';
+import logo_night from './logo_night.png';
 import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import menu_black from './menu-black.png';
 import close_black from './close-black.png';
 import send_icon from './send-icon.png';
+import send_icon_night from './send-icon-night.png';
 import vercel from './vercel.png';
 import supabase from './supabase.png';
 import claude from './claude.png';
@@ -33,13 +36,16 @@ export const assets = {
     git,
     mongodb,
     right_arrow_white,
+    right_arrow_dark,
     logo,
+    logo_night,
     profile_img,
     download_icon,
     hand_icon,
     menu_black,
     close_black,
     send_icon,
+    send_icon_night,
     vercel,
     supabase,
     claude,
@@ -69,6 +75,16 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
+    {
+        title: 'UI/UX designing',
+        description: 'UI/UX Design',
+        bgImage: '/work-5.png',
+    },
+    {
+        title: 'UI/UX designing',
+        description: 'UI/UX Design',
+        bgImage: '/work-6.png',
+    },
 ]
 
 export const infoList = [
@@ -78,5 +94,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.cursor, assets.mongodb, assets.figma, assets.git, assets.vercel, assets.supabase, assets.claude, assets.notion
+    assets.vscode, assets.cursor, assets.mongodb, assets.figma, assets.git, assets.vercel, assets.supabase, assets.claude
 ];

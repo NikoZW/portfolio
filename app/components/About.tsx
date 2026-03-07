@@ -26,7 +26,7 @@ const About = () => {
 
         {/* Content */}
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl text-gray-700">
+          <p className="mb-10 max-w-2xl text-gray-700 dark:text-gray-300">
             I’m a web developer passionate about building clean, thoughtful, and
             user-friendly web experiences. I love the balance of creativity and
             problem-solving in development, and I’m currently growing into web
@@ -41,7 +41,7 @@ const About = () => {
             {infoList?.map((item, index) => (
               <div
                 key={`${item.title}-${index}`}
-                className="border border-gray-300 rounded-lg p-6 cursor-pointer hover:shadow-[4px_4px_0_#000] hover:-translate-y-1 transition-all duration-500"
+                className="border border-gray-300 dark:border-gray-600 rounded-lg p-6 cursor-pointer hover:shadow-[4px_4px_0_#e5e7eb] dark:hover:shadow-[4px_4px_0_#000] hover:-translate-y-1 transition-all duration-500 bg-white dark:bg-gray-800/50"
               >
                 <Image
                   src={item.icon}
@@ -51,19 +51,19 @@ const About = () => {
                   className="w-8 h-8 mb-3"
                 />
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{item.description}</p>
               </div>
             ))}
           </div>
 
           {/* Tools */}
           <div>
-            <h4 className="my-6 text-gray-700 font-Ovo">Tools I use</h4>
+            <h4 className="my-6 text-gray-700 dark:text-gray-300 font-Ovo">Tools I use</h4>
             <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
               {toolsData?.map((tool, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+                  className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 bg-white/50 dark:bg-gray-800/50"
                 >
                   <Image
                     src={tool}
