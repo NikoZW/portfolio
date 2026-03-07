@@ -3,7 +3,7 @@ import code_icon from './code-icon.png';
 import edu_icon from './edu-icon.png';
 import project_icon from './project-icon.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
+import cursor from './cursor.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
@@ -19,6 +19,8 @@ import vercel from './vercel.png';
 import supabase from './supabase.png';
 import claude from './claude.png';
 import notion from './notion.png';
+import tableau from './tableau.png';
+
 
 export const assets = {
     user_image,
@@ -26,7 +28,7 @@ export const assets = {
     edu_icon,
     project_icon,
     vscode,
-    firebase,
+    cursor,
     figma,
     git,
     mongodb,
@@ -41,7 +43,8 @@ export const assets = {
     vercel,
     supabase,
     claude,
-    notion
+    notion,
+    tableau
 
 };
 
@@ -75,5 +78,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.vercel, assets.supabase, assets.claude, assets.notion
+    assets.vscode, assets.cursor, assets.mongodb, assets.figma, assets.git, assets.vercel, assets.supabase, assets.claude, assets.notion
 ];
