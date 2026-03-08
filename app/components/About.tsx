@@ -27,13 +27,13 @@ const About = () => {
         <div className="flex-1">
           <div className="mb-10 max-w-2xl text-gray-700 dark:text-gray-300 space-y-4">
             <p>
-              I&apos;m a Vancouver-based frontend developer with two years of consulting experience at Ernst &amp; Young in Shanghai. 🌍 After completing BCIT&apos;s Computer Systems Technology program 🎓, I now build full-stack web apps with React, Next.js, and TypeScript 💻
+              I&apos;m a Vancouver-based software developer. With a background in consulting at Ernst &amp; Young in Shanghai 🌍.  After completing BCIT&apos;s Computer Systems Technology program 🎓, I now build full-stack web apps with React, Next.js, and TypeScript 💻.
             </p>
             <p>
-              I&apos;m good at spotting problems and turning them into practical solutions. I have a strong eye for design and user experience 🎨, communicate well in team settings 🤝, and bring a hardworking, detail-oriented mindset to everything I do. 🚀
+              I&apos;m good at spotting problems and turning them into practical solutions. I have a strong eye for design and user experience 🎨, communicate well in team settings 🤝, and bring a hardworking, detail-oriented mindset to everything I do 🚀.
             </p>
             <p>
-              Outside of coding, you&apos;ll usually find me training for HYROX 🏋️, chasing a half-marathon PB 🏃, and working my way toward Tennis 3.0 🎾
+              Outside of coding, you&apos;ll usually find me training for HYROX 🏋️, chasing a half-marathon PB 🏃, and working my way toward Tennis 3.0 🎾.
             </p>
           </div>
 

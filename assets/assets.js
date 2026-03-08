@@ -57,7 +57,7 @@ export const assets = {
 export const workData = [
     {
         title: 'Niko Tick',
-        description: 'Full-Stack Todo App',
+        description: 'Full-stack Task Management App',
         tech: 'React, Vite, Supabase',
         bgImage: '/work-1.png',
         link: 'https://niko-tick.vercel.app',
@@ -78,7 +78,7 @@ export const workData = [
     },
     {
         title: 'E. & J. Gallo Winery',
-        description: 'Market Entry Analysis',
+        description: 'Market Entry Data Analysis',
         tech: 'Python, R, SQL, Tableau',
         bgImage: '/work-4.png',
         link: 'https://github.com/NikoZW/gallo-market-analysis-portfolio',

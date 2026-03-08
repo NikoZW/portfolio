@@ -18,13 +18,12 @@ const Header = () => {
       </h3>
 
       <h1 className="text-3xl sm:text-5xl lg:text-5xl ">
-        Vancouver-based Web Developer
+        Vancouver-based Software Developer
       </h1>
 
       <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
-        I build modern web applications with React, Next.js, and TypeScript 💻, with a focus on clean UI, thoughtful UX, and practical problem-solving ✨. With a background in consulting and development 🤝, I enjoy turning ideas into products that are both useful and well-designed 🎨.
+      I&apos;m a Vancouver-based software developer. With a background in consulting 🤝, I enjoy turning ideas into products that are both useful and well-designed 🎨.       
       </p>
-
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 flex-wrap">
         <div className="flex items-center gap-3 order-2 sm:order-1">
           <a
